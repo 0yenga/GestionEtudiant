@@ -1,4 +1,4 @@
-o#include "Etudiant.hpp"
+#include "Etudiant.hpp"
 #include <iostream>
 #include <numeric> 
 
@@ -20,8 +20,8 @@ double Etudiant::calculerMoyenne() const {
 
 void Etudiant::afficherInfos() const {
     double moyenne = calculerMoyenne();
-    cout << "L'étudiant " << m_prenomEtudiant << " " << m_nomEtudiant
-        << " (numéro " << m_numeroEtudiant << ") a une moyenne de "
+    cout << "L'Ã©tudiant " << m_prenomEtudiant << " " << m_nomEtudiant
+        << " (numÃ©ro " << m_numeroEtudiant << ") a une moyenne de "
         << moyenne << "." << endl;
 }
 
@@ -35,7 +35,7 @@ string Etudiant::statutEtudiant() const {
     else if (moyenne < 16)
         return "Bien. Peut faire mieux !";
     else if (moyenne < 18)
-        return "Très bien ! Doit maintenir le cap.";
+        return "TrÃ¨s bien ! Doit maintenir le cap.";
     else
         return "Excellent ! Doit maintenir le cap.";
 }
